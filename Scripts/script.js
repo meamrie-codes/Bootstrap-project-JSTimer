@@ -33,10 +33,12 @@ function TimerFunction(){
 }
 
 
-setInterval(
-'TimerFunction()'//code to be triggerd after delay time is up
-    , 1000) //delay
+
 
 button.addEventListener("click", () => {
-    TimerFunction();
+   // TimerFunction();
+
+setInterval(
+    'TimerFunction()'//code to be triggerd after delay time is up
+    , 1000) //delay
 })

@@ -1,3 +1,73 @@
 .MainPageWrapper{
     height: 100vh;
 }
+/*NavBar Style*/
+.navbar.container a{
+    color:#6d6df0;
+    transition: 0.8s color;
+}
+.navbar .container a:hover{
+    text-decoration: underline;
+    color: #b2b2d2;
+    transition: 0.8s color;
+}
+.navbar.container a:visited{
+    color: mediumpurple;
+}
+
+/*styling the timer*/
+.timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: whitesmoke;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: row-reverse;
+}
+
+.timer div {
+    background: dodgerblue;
+    border-radius: 15px;
+    margin: 20px;
+
+}
+
+/*Section bigImage and Children*/
+.bigImage {
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    /*   for this section to acknowledge the elements below or above it, meaning to avoid overlapping we call Position:relative*/
+    position: relative;
+}
+
+.Banner {
+    display: flex;
+    justify-content: center;
+    padding: 2vh 2vw;
+}
+
+.title {
+    font-size: 4.5rem;
+    text-shadow: 0 5px 35px #b2b2d2;
+}
+
+.info {
+    font-size: 2rem;
+    text-shadow: 0 5px 35px #b2b2d2;
+}
+
+.heroText {
+    text-align: center;
+    box-shadow: 0 0 15px #b9b9b9;
+    /*background: #b9b9b9;*/
+    border-radius: 15px;
+    /*    center the heroText in the BigImage parent*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
